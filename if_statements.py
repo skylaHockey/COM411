@@ -6,13 +6,26 @@
 # #display the finish message
 # print ("finished reading book.")
 
-print ("please enter the activity to be performed")
-activity= input ("enter activity")
-# check if activity is a calculate
-if activity == "calculate":
-    print ("performing calculations...")
-else:
-    print("performing activity..")
-# display the finish message
+# print ("please enter the activity to be performed")
+# activity= input ("enter activity")
+# # check if activity is a calculate
+# if activity == "calculate":
+#     print ("performing calculations...")
+# else:
+#     print("performing activity..")
+# # display the finish message
+#
+# print ("activity completed!")
 
-print ("activity completed!")
+while True:
+    direction=input("what direction should i go? ")
+    if direction=="up":
+        print("i am moving in an upward direction")
+    elif direction=="down":
+        print("i am moving in a downward direction")
+    elif direction=="left":
+        print("i am moving in a left direction")
+    elif direction=="right":
+        print("i am moving in a right direction")
+    else:
+        break
