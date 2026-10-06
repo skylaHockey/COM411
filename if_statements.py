@@ -17,15 +17,24 @@
 #
 # print ("activity completed!")
 
+# while True:
+#     direction=input("what direction should i go? ")
+#     if direction=="up":
+#         print("i am moving in an upward direction")
+#     elif direction=="down":
+#         print("i am moving in a downward direction")
+#     elif direction=="left":
+#         print("i am moving in a left direction")
+#     elif direction=="right":
+#         print("i am moving in a right direction")
+#     else:
+#         break
 while True:
-    direction=input("what direction should i go? ")
-    if direction=="up":
-        print("i am moving in an upward direction")
-    elif direction=="down":
-        print("i am moving in a downward direction")
-    elif direction=="left":
-        print("i am moving in a left direction")
-    elif direction=="right":
-        print("i am moving in a right direction")
-    else:
-        break
+      number = int(input("Enter a number: "))
+      if int(number) % 2 == 0:
+          print("is a Even number")
+      else:
+          print("is an Odd number")
+
+      break
+
