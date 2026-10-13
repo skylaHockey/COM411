@@ -29,12 +29,12 @@
 #         print("i am moving in a right direction")
 #     else:
 #         break
-while True:
-      number = int(input("Enter a number: "))
-      if int(number) % 2 == 0:
-          print("is a Even number")
-      else:
-          print("is an Odd number")
-
-      break
+# while True:
+#       number = int(input("Enter a number: "))
+#       if int(number) % 2 == 0:
+#           print("is a Even number")
+#       else:
+#           print("is an Odd number")
+#
+#       break
 
