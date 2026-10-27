@@ -13,9 +13,18 @@
 # #display message to screen
 # print("I hope you are enjoying the lesson thus far!")
 
+# # Display escape characters
+# print("\n Displays a new line")
+# print("\t Displays a tab space")
+# print("\\ Displays a back slash")
+# print("\" Displays a double quote")
+# print("\' Displays a single quote")
+
 # Display escape characters
 print("\n Displays a new line")
 print("\t Displays a tab space")
 print("\\ Displays a back slash")
 print("\" Displays a double quote")
 print("\' Displays a single quote")
+# Display a single quote
+print("\' Iam programming!")
