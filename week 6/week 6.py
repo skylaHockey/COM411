@@ -42,14 +42,41 @@ import os
 # if __name__ == "__main__":
 #     run_task2()
 
-def search (file_name):
-    print("searching...")
-    with open(file_name, "r") as file:
-        for location in file:
-            print(f"looked in {location}")
-def run_task3 () :
-    search("library.txt")
+# def search (file_name):
+#     print("searching...")
+#     with open(file_name, "r") as file:
+#         for location in file:
+#             print(f"looked in {location}")
+# def run_task3 () :
+#     search("library.txt")
+#
+# if __name__ == "__main__":
+#     run_task3()
+# print("...done!")
+
+def search(file_path):
+    print("Searching...")
+    sections = ""
+    books = "Books:\n"
+
+    with open(file_path) as file:
+        for line in file:
+            sections += line
+        else:
+            books += line
+    print ("Done!")
+    return f"{sections}\n\n{books}"
+def save(file_path, data):
+    print("Saving...")
+    with open(file_path, "w") as file:
+        file.write(data)
+        print("Done!")
+
+def run():
+    data = search("books.txt")
+    save("exported_books.txt", data)
+
 
 if __name__ == "__main__":
-    run_task3()
-print("...done!")
+    run()
+
