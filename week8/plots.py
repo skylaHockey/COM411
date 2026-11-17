@@ -8,28 +8,58 @@ import matplotlib.pyplot as plt
 # y = [1,4,9,16,25]
 # display_line(x,y)
 
-def small():
-    x= [3,3,4,4,3]
-    y= [3,4,4,3,3]
-    plt.plot(x,y, 'r:o')
+# def small():
+#     x= [3,3,4,4,3]
+#     y= [3,4,4,3,3]
+#     plt.plot(x,y, 'r:o')
+#
+# def medium():
+#     x=[2,2,5,5,2]
+#     y=[2,5,5,2,2]
+#     plt.plot(x,y,'g--s')
+#
+# def large():
+#     x=[1,1,6,6,1 ]
+#     y=[1,6,6,1,1]
+#     plt.plot(x,y,'b-p')
+#
+# def run_task2():
+#     small()
+#     medium()
+#     large()
+#     plt.plot()
+#     plt.show()
+# run_task2()
 
-def medium():
-    x=[2,2,5,5,2]
-    y=[2,5,5,2,2]
-    plt.plot(x,y,'g--s')
+def coordinate():
+    print("Enter an x value;")
+    x=int(input())
+    print("Enter an y value;")
+    y=int(input())
+    return (x,y)
 
-def large():
-    x=[1,1,6,6,1 ]
-    y=[1,6,6,1,1]
-    plt.plot(x,y,'b-p')
+def path():
+    print("Retrieving path..")
+    x_values= []
+    y_values = []
 
-def run_task2():
-    small()
-    medium()
-    large()
-    plt.plot()
+    for count in range(4):
+        data = coordinate()
+        x_values.append(data[0])
+        y_values.append(data[1])
+
+    return(x_values, y_values)
+def run_task3():
+    values = path()
+    plt.plot(values[0], values[1], "r--o")
+    plt.xlabel("x values")
+    plt.ylabel("y values")
     plt.show()
-run_task2()
+run_task3()
+
+
+
+
 
 
 
